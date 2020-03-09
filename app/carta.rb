@@ -1,7 +1,7 @@
 require 'sqlite3'
 
 class Carta
-  $db = SQLite3::Database.open('cookbook.db')
+  $db = SQLite3::Database.open('cartas.db')
   $db.results_as_hash = true
 
   attr_accessor :ingles, :portugues

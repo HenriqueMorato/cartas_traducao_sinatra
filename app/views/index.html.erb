@@ -11,5 +11,15 @@
     <h3><%= carta.portugues %></h3>
     <p><%= carta.ingles %></p>
   <% end %>
+
+  <div>
+    <form action="/cartas" method="POST">
+      <label for="portugues">Palavra em português:</label><br>
+      <input type="text" id="portugues" name="portugues"><br>
+      <label for="ingles">Palavra em inglês:</label><br>
+      <input type="text" id="ingles" name="ingles"><br>
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
 </body>
 </html>
